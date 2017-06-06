@@ -15,11 +15,13 @@ html {
 	background-color: #000;
 }
 
-.bgcW90pct {
-	background:rgba(255,255,255,.9)
-}
+
 responsive_nav {
 	z-index: 5;
+}
+/*
+.bgcW90pct {
+	background:rgba(255,255,255,.9)
 }
 .bgcW70pct {
 	background:rgba(255,255,255,.7)
@@ -27,9 +29,10 @@ responsive_nav {
 .bgcW40pct {
 	background:rgba(255,255,255,.4)
 }
+*/
 .container, .w1024 {
 	max-width:1024px;
-	background:rgba(255,255,255, .9);
+
 }
 .iRed {
 	color: #d40f0f;
@@ -38,6 +41,8 @@ responsive_nav {
 
 article, #calendar {
 	padding:0 1em;
+	height: 100vh;
+	background:rgba(255,255,255,.7)
 
 }
 
@@ -87,7 +92,7 @@ form textarea {
 
 }
 blockquote {
-	max-resolution: 1rem;em;
+	margin: 1rem;
 }
 footer {
 	padding: .5rem 2rem;
@@ -118,6 +123,10 @@ footer {
 	.stayOpen {
 		height: auto;
 	}
+	.spacer {
+		display:block;
+		height: 100vh;
+	}
 aside.notMobile {
 	display: block;
 }
@@ -136,6 +145,9 @@ aside.notMobile {
 	}
 	#heroImg .parallax{
 		background-image: url('../images/background.jpg');
+	}
+	#indexPg .parallax {
+		background-image: url('../images/Extrasolar_planet_NASA3.jpg');
 	}
 	#contactForm .parallax {
 		background-image: url(../images/Extrasolar_planet_NASA3.jpg);
