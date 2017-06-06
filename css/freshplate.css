@@ -306,10 +306,10 @@ section.printOnly {
     font-weight: bold;
     font-style: italic; }
 
-ul.hng-lst {
+ul.hng-lst, ol.hng-lst {
   width: 80%;
   margin-left: 4rem; }
-  ul.hng-lst li {
+  ul.hng-lst li, ol.hng-lst li {
     text-indent: -2.5rem; }
 
 .centerSection {
@@ -988,11 +988,11 @@ table {
   display: block;
   box-sizing: inherit; }
 
-thead {
+th, th:first-of-type {
   border-bottom: 1px solid #999;
   font-weight: bold; }
 
-.border {
+.border table, .border th, .border td {
   border: 1px solid #999; }
 
 .striped-even tr:nth-child(even) {
@@ -1001,7 +1001,10 @@ thead {
 .striped-odd tr:nth-child(odd) {
   background-color: #fafbf5; }
 
-.hover tr:hover {
+.hover-row tr:hover {
+  background-color: #e4b363; }
+
+.hover-cell td:hover, .hover-cell th:hover {
   background-color: #e4b363; }
 
 .center {
