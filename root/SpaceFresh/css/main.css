@@ -95,6 +95,9 @@ footer {
 #ftr2 {
 	padding: 0 auto;
 }
+#ftr3 {
+	padding: 1rem 0;
+}
 #article1img1 {
 	display:flex;
 	width: 60px;
@@ -109,16 +112,21 @@ footer {
 	height:50px;
 	margin: 1rem;
 }
-#indexPg {
+.FPIco {
+ width:10px;
+height:auto;
+}
+div#indexPg {
 	display:block;
 	height:auto;
+	border-top:solid 10px rgba(255,255,255, .7);
 
 }
 @media screen and (min-width:600px) {
 
 }
 @media screen and (min-width:768px) {
-	article, #calendar {
+	.indexPgBdy article, .indexPgBdy > #calendar {
 	height: 80rem;
 	overflow: hidden;
 
@@ -128,7 +136,7 @@ footer {
 	}
 	.spacer {
 		display:block;
-		height: 100vh;
+		height: 80rem;
 		background:transparent;
 	}
 aside.notMobile {
@@ -150,12 +158,17 @@ aside.notMobile {
 	#heroImg .parallax{
 		background-image: url('../images/background.jpg');
 	}
+	.parallax > img {
+		margin-bottom:-10px;
+	}
 	#indexPg .parallax {
 		background-image: url('../images/Extrasolar_planet_NASA3.jpg');
 	}
+	
 	#contactForm .parallax {
-		background-image: url(../images/Extrasolar_planet_NASA3.jpg);
+		background-image: url('../images/Extrasolar_planet_NASA3.jpg');
 	}
+	
 	#thankYou {
 		background: url(../images/NeptunTriton2006..png) top center;
 		height:90vh;
@@ -163,7 +176,7 @@ aside.notMobile {
 
 	}
 
-	.container .parallax {
+	#SFProj .parallax {
 		background-image: url(../images/Atlas1024x797.jpg);
 		background-position: top;
 	}

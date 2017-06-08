@@ -119,7 +119,7 @@ footer {
     color: rgb(14, 81, 138);
     font-size: 3em;
     font-family: 'Candal', sans-serif;
-    padding: .5em;
+    margin-top: 3em;
 }
 
 .bfe-btn a:hover {
@@ -195,46 +195,43 @@ footer {
 
 /** parallax specific styles **/
 
-.parallax1 {
-    background: url(../images/restaurant-vintage-table.jpg) no-repeat center center fixed;
-    width: 100%;
-    height: 300px;
-}
-
-.parallax2 {
-    background: url(../images/beer-glass-lg.jpg) no-repeat center center fixed;
-    width: 100%;
-}
-
-.parallax3 {
-    background: url(../images/food-on-tray.jpeg) no-repeat center center fixed;
-    width: 100%;
-    height: 400px;
-}
-
-.parallax4 {
-    background: url(../images/sparklers.jpeg) no-repeat center center fixed;
-    width: 100%;
-    height: 400px;
-}
-
-.parallax5 {
-    background: url(../images/celebration.jpeg) no-repeat center center fixed;
-    width: 100%;
-    height: 300px;
-}
-
-.parallax6 {
-    background: url(../images/bottlesunset-lg.jpg) no-repeat center center fixed;
-    width: 100%;
-    height: 500px;
-    overflow: scroll;
-}
-
-.parallax7 {
-    background: url(../images/nature-field-grain.jpg) no-repeat center center fixed;
-    width: 100%;
-    height: 300px
+@media screen and (min-width: 768px) {
+    .parallax1 {
+        background: url(../images/restaurant-vintage-table.jpg) no-repeat center center fixed;
+        width: 100%;
+        padding: 300px 0;
+        min-height: 500px;
+    }
+    .parallax2 {
+        background: url(../images/beer-glass-lg.jpg) no-repeat center center fixed;
+        width: 100%;
+    }
+    .parallax3 {
+        background: url(../images/food-on-tray.jpeg) no-repeat center center fixed;
+        width: 100%;
+        padding: 400px 0;
+    }
+    .parallax4 {
+        background: url(../images/sparklers.jpeg) no-repeat center center fixed;
+        width: 100%;
+        padding: 400px 0;
+    }
+    .parallax5 {
+        background: url(../images/celebration.jpeg) no-repeat center center fixed;
+        width: 100%;
+        padding: 300px 0;
+    }
+    .parallax6 {
+        background: url(../images/bottlesunset-lg.jpg) no-repeat center center fixed;
+        width: 100%;
+        padding: 300px 0;
+        overflow: scroll;
+    }
+    .parallax7 {
+        background: url(../images/nature-field-grain.jpg) no-repeat center center fixed;
+        width: 100%;
+        padding: 300px 0;
+    }
 }
 
 .parallax-header {

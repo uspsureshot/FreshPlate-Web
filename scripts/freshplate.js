@@ -8,35 +8,35 @@
     var interval;
 
 $(document).ready(function(){
-
+    
     //BEGIN : Code for responsive menu toggling
-    $('.responsive_nav_icon').click(function(){
+    $('.responsive_nav_icon').click(function(){ 
         $('.responsive_nav').slideToggle("500");
         });
-
+     
     //Open/Close side nav menu on click
     $('.side_nav_btn').click(side_nav_open);
     $('.side_nav_close').click(side_nav_close);
     //END: Responsive menu
-
+    
     //BEGIN: Code for auto slideshow
-     var $carousel = $('.auto_slideshow');
+     var $carousel = $('.auto_slideshow'); 
     //Have carousel started on page load
     startSlideShow();
     $carousel.on('mouseenter',stopSlideShow).on('mouseleave', startSlideShow);
     //END: Auto Slideshow
-
-
+    
+    
     //BEGIN: Code for the thumbnail slider gallery
     var lgImgCont = $('.slider').css('overflow','hidden').children('ul');
     var thumImgCont = $('.thumb_gallery').children('ul');
-
+    
     //Create new slider object for thumbnail gallery
     if($('.slider').length){
         var sliderObj = new slider(lgImgCont, thumImgCont, $('.sliderCtrls') );
 
         //Set up click functions for slider control buttons
-        sliderObj.nav.find('button').on('click',function(){
+        sliderObj.nav.find('button').on('click',function(){                   
             sliderObj.setCurrentPos($(this).data('dir'));
             sliderObj.transition();
                     });
@@ -46,9 +46,9 @@ $(document).ready(function(){
             evt.preventDefault();
             sliderObj.setCurrentPos($(this).data('pgno'));
             sliderObj.transition();
-        });
+        });   
     } //END: Code for the thumbnail slider gallery
-
+    
     //BEGIN: Code for Modal pop-up
     if($('.popUpImg').length){
         $('.popUpImg img').each(function() {
@@ -69,7 +69,7 @@ $(document).ready(function(){
             }); //End popup click event
         });//END: Each function
     } //END: Modal Pop-up
-
+    
      //Code to scroll to top of the page
     $('.btn_top').click(function(e){
         e.preventDefault();
@@ -77,10 +77,10 @@ $(document).ready(function(){
             scrollTop : 0},500);
 
     });// END scroll to top function
-
+    
     //Scroll to specific elements on the page (useful for single page websites)
     //function to enable page scrolling
-    $('.scroll').on('click', function(e) {
+    $('.scroll').on('click', function(e) { 
         var target = $(this).attr('href');
         if(target.length){
             e.preventDefault();
@@ -88,25 +88,25 @@ $(document).ready(function(){
                 scrollTop: $(target).offset().top},500);
         }
     }); //End scroll function
-
+        
 }); //END Doc ready
-
-
+    
+    
 
 /* Function to start-stop SlideShow */
 function startSlideShow(){
-
+    
     var $slideBox = $('.auto_slideshow ul');
     var $slides = $('.auto_slideshow li');
-
+    
         interval = setInterval(function(){
         $slideBox.animate({'margin-left': '-=' +autoSlideWidth},autoSlideSpeed, function() {
                 ($slideBox).find('li:last').after($slideBox.find('li:first'));
                 $slideBox.css('margin-left',0);
-            }); //End animate function
+            }); //End animate function     
         }, autoSlidePause);//End Setinterval function
-    };//End startCarousel function
-
+    };//End startCarousel function 
+    
 function stopSlideShow(){
         clearInterval(interval);
     }
