@@ -18,19 +18,23 @@ footer h6 {
 }
 
 #top {
-          background-color: #556B2F;
+          /* background-color: #556B2F; */
+		background-image: url(../images/p.jpg);
+	background-size: cover;
+	background-position: center;
           padding: 1%;
 }
 #header {
           max-width: 1140px;
           height: auto;
-          color: black;
+          color: #fff;
           padding-bottom: 20px;
 }
 
 #tagline {
           padding:15px 1rem;
           text-align: center;
+	text-shadow: 5px 5px 8px #000;
           
 }
 #main {
@@ -44,12 +48,14 @@ footer h6 {
 	font-size: 48px;
 }
 .btnHuge {
-    color: #e4b363;
+    color: aqua;
     font-size: 2rem;
     margin: 0 25%;
+	text-shadow: 1px 1px 5px #333;
 }
 .btnHuge:hover {
-    color: #333;
+    color: #000;
+	text-shadow: none;
 }
 .cloud {
     vertical-align: text-bottom;
