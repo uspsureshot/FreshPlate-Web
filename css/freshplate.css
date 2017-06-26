@@ -1042,6 +1042,78 @@ th, th:first-of-type {
   tr,
   td {
     padding: 1.5em; } }
+/*** Styles for the different CSS/JS Components ********/
+/* Styles for Tabs*/
+.hTabs {
+  min-width: 320px;
+  max-width: 800px;
+  margin: 0 auto;
+  border: solid 1px #ccc; }
+
+.tab_menu button {
+  color: #434955;
+  border: none;
+  margin: 0.5em;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff; }
+  .tab_menu button:hover {
+    background-color: #999;
+    color: #fff; }
+
+.tab_menu .activeTab {
+  border-bottom: solid 1px #999; }
+
+[id^="tab_content"] {
+  clear: both;
+  display: none;
+  padding: 5px; }
+
+/* Styles for Accordion Content*/
+.accordion {
+  max-width: 960px;
+  margin: 5% auto; }
+  .accordion:last-child {
+    border-bottom: solid 1px #ccc; }
+
+.accordion-header {
+  border: solid 1px #ccc;
+  border-bottom: 0;
+  height: 40px;
+  padding: 0 15px;
+  line-height: 40px;
+  color: #434955;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #fdfdfd;
+  -webkit-tap-highlight-color: transparent;
+  transition: background .2s linear; }
+  .accordion-header:hover {
+    background-color: #999;
+    color: #fff; }
+  .accordion-header:after {
+    content: "\e313";
+    font-family: 'Material Icons';
+    float: right;
+    font-size: 18px;
+    transition: all .2s linear; }
+
+.accordionActive.accordion-header {
+  background-color: #999;
+  color: #fff;
+  margin-bottom: 0; }
+  .accordionActive.accordion-header:after {
+    content: "\e316";
+    font-family: 'Material Icons'; }
+
+.accordion-panel {
+  padding: 0 .5em;
+  border: solid 1px #ccc;
+  border-bottom: 0;
+  background-color: #fff;
+  color: #434955;
+  display: none; }
+
 @media print {
   header[role="banner"], footer, nav {
     display: none; }

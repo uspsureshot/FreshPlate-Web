@@ -115,6 +115,7 @@ footer h6 {
 .wide {
 	width: 100%;
 }
+
 @media screen and (min-width: 768px){
   .doc-toc h2 {
     display: none;
@@ -128,3 +129,4 @@ footer h6 {
     background-color: rgba(127, 191, 63, 0.9);
   }
 }
+
