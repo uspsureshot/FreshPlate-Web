@@ -88,6 +88,36 @@ $(document).ready(function(){
                 scrollTop: $(target).offset().top},500);
         }
     }); //End scroll function
+    
+/*********TABS**********/
+    //on page load have first tab contents shown be default
+    $('#tab1').addClass('activeTab');
+    $('#tab_content1').css('display','block');
+    //on button click update new tab content and remove older tab highlight
+    $('.tab_menu button').click(function(event){
+        $('.tab_menu button').each(function(){
+            $(this).removeClass('activeTab');
+        });
+            $('[id^="tab_content"]').each(function(){
+                $(this).css('display','none');
+                $(this).removeClass('activeTab')
+            });
+            var btnID= event.target.id;
+            var lastChar = btnID.substr(btnID.length -1);
+            var contentID = 'tab_content'+lastChar;
+            $('#'+contentID).css('display','block');
+            //$(this).css('background-color','#ccc');
+            $(this).addClass('activeTab');
+    })
+    
+/*********   ACCORDION ************/
+    //Find the item clicked and toggle the corresponding the panel open/close
+    
+    
+    $('.accordion-header').click(function(){
+        $(this).toggleClass('accordionActive');
+        $(this).next().slideToggle();
+    })
         
 }); //END Doc ready
     

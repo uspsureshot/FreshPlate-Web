@@ -108,3 +108,17 @@ footer h6 {
 .wide {
 	width: 100%;
 }
+
+/*Styles for showing code snippets*/
+.codeSnippet{
+    background: #fff;
+    border: 0 none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 3%;
+    font-size: .9em;
+}
+}

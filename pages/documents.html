@@ -734,8 +734,77 @@
 <p><code>#page2 .parallax { background-image: url('../images/YourImageHere02.jpeg'); }</code></p>
 
     </section>
+<hr>
+   <section>
+        <h2><span class="material-icons mainDocs">tab</span>Tabs</h2>
+        <p>To create tabs there are a couple of things needed. A main container (class 'hTabs') that contains the <em>tab menu section</em> with the bunch of buttons and a section with corresponding <em>tab content</em>. Check the demo below</p>
+       <button class="btn_codeSnippet btnFlat-rnd-crnr btnMed">Click here for Code</button>
+        <div class="codeSnippet">
+            <code>
+            &lt;div class=&quot;hTabs&quot;&gt;<br/>                &lt;div class=&quot;tab_menu&quot;&gt;<br/>                    &lt;button id=&quot;tab1&quot;&gt;Tab1&lt;/button&gt;<br/>                    &lt;button id=&quot;tab2&quot; &gt;Tab2&lt;/button&gt;<br/>                    &lt;button id=&quot;tab3&quot; &gt;Tab3&lt;/button&gt;<br/>                &lt;/div&gt;<br/><br/>                &lt;div id=&quot;tab_content1&quot;&gt;<br/>                    &lt;p &gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, sit voluptatibus voluptas rerum error ea fugiat similique eos itaque enim hic reiciendis eveniet sapiente velit excepturi nobis harum modi veritatis?&lt;/p&gt;<br/>                &lt;/div&gt;<br/><br/>                &lt;div id=&quot;tab_content2&quot;&gt;<br/>                    &lt;p &gt; Eveniet odit, molestiae ab. Laborum culpa dolores, voluptatibus eligendi quasi consectetur aut fugit, rem labore dolore deleniti nemo minima, harum, soluta non!&lt;/p&gt;<br/>                &lt;/div&gt;    <br/><br/><br/>                &lt;div id=&quot;tab_content3&quot;&gt;<br/>                    &lt;p &gt; Quasi sunt magnam cupiditate praesentium hic fugiat dicta sint accusamus, error sed voluptatum nulla consequuntur veniam ullam harum. Excepturi aliquid deleniti tempore.&lt;/p&gt;<br/>                &lt;/div&gt;<br/>            &lt;/div&gt;
+            </code>
+        </div>
+        <div class="hTabs">
+            <div class="tab_menu">
+                <button id="tab1">Tab1</button>
+                <button id="tab2" >Tab2</button>
+                <button id="tab3" >Tab3</button>
+            </div>
+
+            <div id="tab_content1">
+                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, sit voluptatibus voluptas rerum error ea fugiat similique eos itaque enim hic reiciendis eveniet sapiente velit excepturi nobis harum modi veritatis?</p>
+            </div>
+
+            <div id="tab_content2">
+                <p > Eveniet odit, molestiae ab. Laborum culpa dolores, voluptatibus eligendi quasi consectetur aut fugit, rem labore dolore deleniti nemo minima, harum, soluta non!</p>
+            </div>    
+
+
+            <div id="tab_content3">
+                <p > Quasi sunt magnam cupiditate praesentium hic fugiat dicta sint accusamus, error sed voluptatum nulla consequuntur veniam ullam harum. Excepturi aliquid deleniti tempore.</p>
+            </div>
+        </div>
+        </section>
+        
+<hr>
+     <section>
+        <h2><span class="material-icons mainDocs">arrow_drop_down_circle</span>Accordion</h2>
+        <p>To create accordions you will need to enclode the accordion in a container with class 'accordion'. The accordion  container basically has two section for each panel. An <em>accordion-header</em> and its corresponding <em>accordion-panel</em>. Thats it. You can keep adding mroe panel pairs like that. Check the code snippet for the necessary classes.</p>
+       <button class="btn_codeSnippet btnFlat-rnd-crnr btnMed">Click here for Code</button>
+        <div class="codeSnippet">
+            <code>
+            &lt;div class=&quot;accordion&quot;&gt;<br/>            &lt;h4 class=&quot;accordion-header&quot;&gt;Panel 1&lt;/h4&gt;<br/>            &lt;div class=&quot;accordion-panel&quot;&gt;<br/>                &lt;p &gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, sit voluptatibus voluptas rerum error ea fugiat similique eos itaque enim hic reiciendis eveniet sapiente velit excepturi nobis harum modi veritatis?&lt;/p&gt;<br/>            &lt;/div&gt;<br/>            &lt;h4 class=&quot;accordion-header&quot;&gt;Panel 2&lt;/h4&gt;<br/>            &lt;div class=&quot;accordion-panel&quot;&gt;<br/>                &lt;p &gt; Eveniet odit, molestiae ab. Laborum culpa dolores, voluptatibus eligendi quasi consectetur aut fugit, rem labore dolore deleniti nemo minima, harum, soluta non!&lt;/p&gt;<br/>            &lt;/div&gt;<br/>            &lt;h4 class=&quot;accordion-header&quot;&gt;Panel 3&lt;/h4&gt;<br/>            &lt;div class=&quot;accordion-panel&quot;&gt;<br/>                 &lt;p &gt; Quasi sunt magnam cupiditate praesentium hic fugiat dicta sint accusamus, error sed voluptatum nulla consequuntur veniam ullam harum. Excepturi aliquid deleniti tempore.&lt;/p&gt;<br/>            &lt;/div&gt; <br/>        &lt;/div&gt;
+            </code>
+        </div>
+        <div class="accordion">
+            <h4 class="accordion-header">Panel 1</h4>
+            <div class="accordion-panel">
+                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, sit voluptatibus voluptas rerum error ea fugiat similique eos itaque enim hic reiciendis eveniet sapiente velit excepturi nobis harum modi veritatis?</p>
+            </div>
+            <h4 class="accordion-header">Panel 2</h4>
+            <div class="accordion-panel">
+                <p > Eveniet odit, molestiae ab. Laborum culpa dolores, voluptatibus eligendi quasi consectetur aut fugit, rem labore dolore deleniti nemo minima, harum, soluta non!</p>
+            </div>
+            <h4 class="accordion-header">Panel 3</h4>
+            <div class="accordion-panel">
+                 <p > Quasi sunt magnam cupiditate praesentium hic fugiat dicta sint accusamus, error sed voluptatum nulla consequuntur veniam ullam harum. Excepturi aliquid deleniti tempore.</p>
+            </div> 
+        </div>
+        </section>
+        
     </section>
     <footer class="casualHead"><h6>&copy; 2017 | FreshPlate</h6></footer>
     <script type="text/javascript" src="../scripts/freshplate.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //script for toggling code snippets in the documentation
+            $('.codeSnippet').hide();
+            //When the button is clicked the corresponding code open/close
+            $('.btn_codeSnippet').click(function(){
+                $(this).next('.codeSnippet').slideToggle();
+            });//end code snippet click function
+            
+        });
+    </script>
 </body>
 </html>
