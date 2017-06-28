@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>FreshPlate Documentation</title>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link href="../css/freshplate.css" type="text/css" rel="stylesheet" />
-    
+
     <link href="../css/mystyles.css" type="text/css" rel="stylesheet" />
-    
+
     <script
      src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
-  
+
   <link href="../images/faviconPlate.png" rel="icon" type="image/png">
   </head>
-  
+
 <body>
- 
+
    <header id="top">
     <section id="header" class="centerSection">
     <a href="../index.html"><img class="responsiveImg pagesImg" src="../images/FP-logo-white.png" alt="logo" /></a>
-   
+
     </section>
     </header>
       <nav >
@@ -39,19 +39,38 @@
     </nav>
 
     <section id="main" class="centerSection" >
-    
+
     <header>
         <h1>Documentation for FreshPlate Framework</h1>
     </header>
 	<hr>
+
+    <section class="doc-toc">
+      <h2><span class="material-icons mainDocs">toc</span>Table of Contents</h2>
+      <ul>
+        <li><a href="#reset">Reset</a></li>
+        <li><a href="#type">Typography</a></li>
+        <li><a href="#printer">Printing</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#grid">Grid System</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#responsiveImg">Responsive Images</a></li>
+        <li><a href="#helperClasses">Helper Classes</a></li>
+        <li><a href="#navigation">Navigation</a></li>
+        <li><a href="#icons">Icons</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#parallax">Parallax Scrolling</a></li>
+      </ul>
+    </section>
     <section>
-       
-        <h2><span class="material-icons mainDocs">history</span>Reset</h2>
+
+        <h2 id="reset"><span class="material-icons mainDocs">history</span>Reset</h2>
         <p>The basic resets ensure that html elements work consistently across all browsers. </p>
     </section>
 <hr>
     <section>
-        <h2><span class="material-icons mainDocs">format_size</span>Basic Typography Formatting</h2>
+        <h2 id="type"><span class="material-icons mainDocs">format_size</span>Basic Typography Formatting</h2>
 
         <h4 class="typog">Headings h1 through h6 and the four link states are pre-formatted</h4>
         <table class="border">
@@ -161,7 +180,7 @@
     </section>
 <hr>
     <section>
-        <h2><span class="material-icons mainDocs">invert_colors_off</span>No Print/Print Only</h2>
+        <h2 id="printer"><span class="material-icons mainDocs">invert_colors_off</span>No Print/Print Only</h2>
         <table>
             <tr>
                 <td>noPrint</td>
@@ -175,7 +194,7 @@
     </section>
 <hr>
     <section>
-        <h2><span class="material-icons mainDocs">assignment</span>Forms</h2> You can use the following classes to customize the look of your form input areas.
+        <h2 id="forms"><span class="material-icons mainDocs">assignment</span>Forms</h2> You can use the following classes to customize the look of your form input areas.
         <table>
             <tr>
                 <td>
@@ -242,15 +261,15 @@
     </section>
 <hr>
     <section>
-        <h2><span class="material-icons mainDocs">border_all</span>Grid System</h2>
+        <h2 id="grid"><span class="material-icons mainDocs">border_all</span>Grid System</h2>
         <p>The grid system in the FreshPlate framework is based on 960px wide grid divided into 12 columns. All rows are wrapped in a 'div'. All columns are wrapped in a 'row' and add up to 12. The grid acts responsively with the following breakpoints:
         </p>
-        
+
             <p><span class="bold">1. </span>Mobile portrait (Default) - Single column. No need to define. But for those users who want more granular control of mobile screen you can use classes to further split your container. </p>
             <p><span class="bold">2. </span>Mobile landscape - @media screen and (min-device-width: 600px)</p>
             <p><span class="bold">3. </span>Tablet- @media screen and (min-width: 768px)</p>
             <p><span class="bold">4. </span>Large screen- @media screen and (min-width: 1200px)</p>
-        
+
         <div class="row">
             <div class="casualHead col-lg-3 col-tb-12 col-ml-6">
                 <h3 class="typog">Grid system example</h3>
@@ -269,7 +288,7 @@
     </section>
 <hr>
     <section>
-        <h2><span class="material-icons mainDocs">view_module</span>Tables</h2>
+        <h2 id="tables"><span class="material-icons mainDocs">view_module</span>Tables</h2>
         <table>
             <tr>
                 <td>.border</td>
@@ -402,7 +421,7 @@
     </section>
 <hr>
     <section>
-        <h2><span class="material-icons mainDocs">radio_button_checked</span>Buttons</h2>
+        <h2 id="buttons"><span class="material-icons mainDocs">radio_button_checked</span>Buttons</h2>
         <table>
             <tr>
                 <td>
@@ -488,18 +507,18 @@
     </section>
 <hr>
     <section>
-        <h2><span class="material-icons mainDocs">photo_size_select_large</span>Responsive Images</h2>
+        <h2 id="responsiveImg"><span class="material-icons mainDocs">photo_size_select_large</span>Responsive Images</h2>
         <table>
             <tr>
                 <td>.responsiveImg</td>
                 <td class="wide"><img src="http://placekitten.com/g/1200/300" alt="kitten placeholder image" class="responsiveImg"><hr>Allows images to behave responsively; adding this class to an img tag ensures a responsive image.</td>
             </tr>
         </table>
-       <p class="bold">(Try it : Try resizing your browser window to see how images adjust responsively.)</p> 
+       <p class="bold">(Try it : Try resizing your browser window to see how images adjust responsively.)</p>
     </section>
 <hr>
     <section>
-        <h2><span class="material-icons mainDocs">lightbulb_outline</span>Helper Classes</h2>
+        <h2 id="helperClasses"><span class="material-icons mainDocs">lightbulb_outline</span>Helper Classes</h2>
         <p>Fresh Plate includes a number of helper classes beyond the usual quick floats and clear fix. To create bold text, for example, add the class ‘bold’, and to create italicized text, add the class ‘italic’.</p>
 
         <table>
@@ -534,13 +553,13 @@
             </tr>
             <tr>
                 <td>.hng-lst </td>
-                <td>Applying this class to an ol or ul formats the list item li to have a first line out-dent, creating a hanging item.  Only the first line is affected. 
+                <td>Applying this class to an ol or ul formats the list item li to have a first line out-dent, creating a hanging item.  Only the first line is affected.
 </td>
             </tr>
             <tr>
                 <td>.centerSection </td>
                 <td>Useful for centering block type items in any container.  Cannot be used in conjunction with the grid classes.</td>
-            </tr>  
+            </tr>
             <tr>
                 <td>.notMobile</td>
                 <td>Adding this class sets the display to 'none' for widths less than 768 pixels.  This would be useful if you don't want a picture or other item displayed in mobile formats.
@@ -555,14 +574,14 @@
                 <td>Enables smooth scrolling to the desired element on that page.</td>
             </tr>
         </table>
-		
-      
-       
-        
+
+
+
+
     </section>
 <hr>
     <section>
-        <h2><span class="material-icons mainDocs">storage</span>Navigation</h2>
+        <h2 id="navigation"><span class="material-icons mainDocs">storage</span>Navigation</h2>
         <p>The following snippet of code is a basic navbar you can follow to add responsive navigation to any page. For smaller screens, a hamburger menu icon will appear on the top left that you can toggle to open/show the menu links.</p>
         <h5>HTML:</h5>
         <code>
@@ -651,8 +670,8 @@
     </section>
 <hr>
     <section>
-        <h2><span class="material-icons mainDocs">account_circle</span>Icons</h2>
-        <p>Freshplate provides an icon set imported from Material Design Icons. To use, simply add the 'material-icons' class to an element of your choice and specify what kind of icon you want to use within the tag.</p>
+        <h2 id="icons"><span class="material-icons mainDocs">account_circle</span>Icons</h2>
+        <p>Freshplate provides an icon set imported from <a href="https://material.io/icons/">Material Design Icons</a>. To use, simply add the 'material-icons' class to an element of your choice and specify what kind of icon you want to use within the tag.</p>
         <button type="button" class="btnFlat material-icons">alarm</button>
         <h5>HTML:</h5>
         <code>
@@ -661,7 +680,7 @@
     </section>
 <hr>
     <section>
-        <h2><span class="material-icons mainDocs">view_carousel</span>Gallery</h2>
+        <h2 id="gallery"><span class="material-icons mainDocs">view_carousel</span>Gallery</h2>
         <h4>Automatic Slideshow</h4>
         <p>The Carousel is an automatic slideshow which is set to auto-rotate images in a frame with a 2 second pause. The images in carousel need to be optimized to 300x300 px squares. To call the carousel, just create a div with a class of “auto_slideshow”. Add the optmized images in an un-ordered list.</p>
 
@@ -681,10 +700,10 @@
 
         <h5>HTML</h5>
         <code>
-            
+
         &lt;div class=&quot;gallery_container&quot;&gt;<br/>&lt;div class=&quot;gallery&quot;&gt;<br/>         &lt;div class=&quot;slider&quot;&gt;<br/>&lt;ul&gt;<br/>//Add your own large size images<br/>           &lt;li&gt;&lt;img src=&quot;../images/cupcake01.jpg&quot; alt=&quot;cupcake&quot;&gt;&lt;/li&gt;<br/>   &lt;li&gt;&lt;img src=&quot;../images/cupcake02.jpg&quot; alt=&quot;cupcake&quot;&gt;&lt;/li&gt;<br/>   &lt;li&gt;&lt;img src=&quot;../images/cupcake03.jpg&quot; alt=&quot;cupcake&quot;&gt;&lt;/li&gt;<br/>   &lt;/ul&gt;<br/>&lt;/div&gt;
                 //   End slider→<br/>
-//  Slider controls for prev/next icons 
+//  Slider controls for prev/next icons
                 &lt;div class=&quot;sliderCtrls&quot;&gt;<br/>&lt;button class=&quot;btn_prev&quot; data-dir=&quot;prev&quot;&gt;&lt;/button&gt;<br/>&lt;button class=&quot;btn_next&quot; data-dir=&quot;next&quot;&gt;&lt;/button&gt;<br/>                &lt;/div&gt;
                 //   End slider control buttons<br/>
             &lt;/div&gt;
@@ -711,7 +730,7 @@
     </section>
 <hr>
     <section>
-        <h2><span class="material-icons mainDocs">move_to_inbox</span>Parallax Scrolling</h2>
+        <h2 id="parallax"><span class="material-icons mainDocs">move_to_inbox</span>Parallax Scrolling</h2>
         <p>To have a background-image have a parallax effect for a section, simply add the class=”parallax” to that component like below. Then add the background-image for that section in your own style.</p>
         <table>
             <tr>
@@ -728,7 +747,7 @@
             </tr>
         </table>
        <p class="bold"> *Note: You may use different images on separate containers. The div/section that has the class of "parallax" must only contain the one class, "parallax".  By adding a surrounding container unique to the individual space you can have various background images.</p>
- 
+
 <p>Example:</p>
 <p><code>#hero .parallax { background-image: url('../images/YourImageHere01.jpeg'); }</code></p>
 <p><code>#page2 .parallax { background-image: url('../images/YourImageHere02.jpeg'); }</code></p>

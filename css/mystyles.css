@@ -35,7 +35,7 @@ footer h6 {
           padding:15px 1rem;
           text-align: center;
 	text-shadow: 5px 5px 8px #000;
-          
+
 }
 #main {
     max-width: 1140px;
@@ -59,7 +59,7 @@ footer h6 {
 }
 .cloud {
     vertical-align: text-bottom;
-    
+
 }
 .hover-cell td:hover {
   background-color: #e4b363; }
@@ -69,6 +69,13 @@ footer h6 {
 }
 .demo {
 	margin-top: 12px;
+}
+.doc-toc {
+  margin: 0 auto;
+}
+.doc-toc ul {
+  padding: 1em;
+  max-width: 350px;
 }
 .hm {
     margin-left: 1.5rem;
@@ -88,7 +95,7 @@ footer h6 {
     max-height: 100px;
     padding-top: 20px;
     width: auto;
-          
+
 }
 .striped-even tr:nth-child(even) {
   background-color: #d9dbd0; }
@@ -109,16 +116,17 @@ footer h6 {
 	width: 100%;
 }
 
-/*Styles for showing code snippets*/
-.codeSnippet{
-    background: #fff;
-    border: 0 none;
-    border-radius: 5px;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-    padding: 20px 30px;
-    box-sizing: border-box;
-    width: 80%;
-    margin: 3%;
-    font-size: .9em;
+@media screen and (min-width: 768px){
+  .doc-toc h2 {
+    display: none;
+  }
+  .doc-toc {
+    top: 200px;
+    right: 10px;
+    position: fixed;
+    width: 200px;
+    text-align: right;
+    background-color: rgba(127, 191, 63, 0.9);
+  }
 }
-}
+
