@@ -367,57 +367,40 @@
             </tr>
         </table>
         <h3>Sample Table</h3>
-        <table class="hover-row striped-even center">
-            <thead>
-                <tr>
-                    <th>Day</th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                    <th>Saturday</th>
-                    <th>Sunday</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Hours</td>
-                    <td>8pm - 5pm</td>
-                    <td>8pm - 5pm</td>
-                    <td>8pm - 5pm</td>
-                    <td>8pm - 5pm</td>
-                    <td>8pm - 5pm</td>
-                    <td>10pm - 8pm</td>
-                    <td>10pm - 5pm</td>
-                </tr>
-                <tr>
-                    <td>Specials</td>
-                    <td>Mongolian Beef</td>
-                    <td>General Tso's Chicken</td>
-                    <td>Orange Chicken</td>
-                    <td>XO Shrimp</td>
-                    <td>Spring rolls</td>
-                    <td>Honey Walnut Shrimp</td>
-                    <td>Chicken Chow Mein</td>
-                </tr>
-                <tr>
-                    <td>Drink Special</td>
-                    <td>Diet Coke</td>
-                    <td>Lemonade</td>
-                    <td>Root Beer</td>
-                    <td>Tsingtao</td>
-                    <td>Sapporo</td>
-                    <td>Asahi</td>
-                    <td>Soju</td>
-                </tr>
-                <tr>
-                    <td colspan="4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
-                    <td colspan="4">Lorem ipsum dolor sit amet.</td>
-                </tr>
-            </tbody>
-        </table>
+        <table   class='striped-odd centerSection'>
+	<thead>
+		<th class='tcol01'>Title One</th>
+		<th class='tcol02'>Title Two</th>
+		<th class='tcol03'>Title Three</th>
+		<th class='tcol04'>Title Four</th>
+		<th class='tcol05'>Title Five</th>
+		<th class='tcol06'>Title Six</th>
+	</thead>
+	<tbody>
+	
+<tr id='row01'> 
+	<td class='tcol01' data-label='Title One'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+	<td class='tcol02' data-label='Title Two'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>	<td class='tcol03' data-label='Title Three'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>	<td class='tcol04'  data-label='Title Four'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>	<td class='tcol05'  data-label='Title Five'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>	<td class='tcol06'  data-label='Title Six'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+</tr>
+<tr id='row02'>
+	<td class='tcol01' data-label='Title One'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+	<td class='tcol02' data-label='Title Two'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>	<td class='tcol03' data-label='Title Three'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>	<td class='tcol04'  data-label='Title Four'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>	<td class='tcol05'  data-label='Title Five'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>	<td class='tcol06'  data-label='Title Six'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+</tr>
+<tr id='row03'>
+	<td class='tcol01' data-label='Title One'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+	<td class='tcol02' data-label='Title Two'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>	<td class='tcol03' data-label='Title Three'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>	<td class='tcol04'  data-label='Title Four'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>	<td class='tcol05'  data-label='Title Five'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>	<td class='tcol06'  data-label='Title Six'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+</tr>	
+	</tbody>
+	</table>
         <p class="bold">(Try it : Try resizing your browser window to see how tables adjust responsively.)</p>
+        <p>Tables are very old school.  But that is sometimes the very best way to show certain kinds of data.  In order to be ADA compliant, you cannot hide your table heading fields.  Doing that messes with eRaders for the visually impaired.</p>
+
+		<p>On a small device, having more than 2 or three columns becomes a problem.  A two column layout, where the column titles repeat on each item is a better option.  The sample table has 6 columns.  But when you get down to mobile, having those columns crowded in to the screen means it’s impossible to read.</p> 
+
+		<p>Enter <q>data-label</q>: By moving the th fields off the page by absolute positioning.  This allows eReades to see the table headers.  We then pull the data-label attribute and place it in front of each Table Data field. This creates a faux 2 column layout.</p>
+
+		<p>Go ahead and shrink down the above table and watch what happens.  On any device smaller than a tablet, there is a faux 2 column layout, after that it is then back to normal views.</p>
+   		<p>Code Example:  &lt;td data-label=<q>Column One</q>&gt;Text in the first table data cell.&lt;/td&gt;</p>
     </section>
 <hr>
     <section>
