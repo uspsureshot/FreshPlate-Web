@@ -981,25 +981,24 @@ button, a.button {
   height: 100%; }
 
 table {
+  display: block;
   font-size: .5em;
   padding: .5em 0;
   border-collapse: collapse;
   width: 100%;
-  display: block;
   box-sizing: inherit; }
 
 th, th:first-of-type {
   border-bottom: 1px solid #999;
   font-weight: bold; }
 
-.border table, .border th, .border td {
-  border: 1px solid #999; }
-
 .striped-even tr:nth-child(even) {
-  background-color: #fafbf5; }
+  background-color: #fafbf5;
+  border-color: #fff; }
 
 .striped-odd tr:nth-child(odd) {
-  background-color: #fafbf5; }
+  background-color: #fafbf5;
+  border-color: #fff; }
 
 .hover-row tr:hover {
   background-color: #e4b363; }
@@ -1012,32 +1011,6 @@ th, th:first-of-type {
 
 /*******Media Queries ********/
 /* Mobile */
-@media screen and (max-width: 767px) {
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    right: -15000px; }
-
-  tbody tr td {
-    display: block;
-    position: relative;
-    padding-left: 25%;
-    margin-right: 2em;
-    width: 74%;
-    border-bottom: solid 1px inherit; }
-
-  tbody tr td:first-child {
-    border-top: solid 1px inherit; }
-
-  tbody tr td:before {
-    position: absolute;
-    left: .5rem;
-    align-items: center;
-    content: attr(data-label);
-    width: 20%;
-    background: inherit;
-    margin-right: 1rem;
-    font-weight: bolder; } }
 @media screen and (min-width: 400px) {
   table,
   th,
@@ -1068,78 +1041,6 @@ th, th:first-of-type {
   tr,
   td {
     padding: 1.5em; } }
-/*** Styles for the different CSS/JS Components ********/
-/* Styles for Tabs*/
-.hTabs {
-  min-width: 320px;
-  max-width: 800px;
-  margin: 0 auto;
-  border: solid 1px #ccc; }
-
-.tab_menu button {
-  color: #434955;
-  border: none;
-  margin: 0.5em;
-  cursor: pointer;
-  text-align: center;
-  background-color: #fff; }
-  .tab_menu button:hover {
-    background-color: #999;
-    color: #fff; }
-
-.tab_menu .activeTab {
-  border-bottom: solid 1px #999; }
-
-[id^="tab_content"] {
-  clear: both;
-  display: none;
-  padding: 5px; }
-
-/* Styles for Accordion Content*/
-.accordion {
-  max-width: 960px;
-  margin: 5% auto; }
-  .accordion:last-child {
-    border-bottom: solid 1px #ccc; }
-
-.accordion-header {
-  border: solid 1px #ccc;
-  border-bottom: 0;
-  height: 40px;
-  padding: 0 15px;
-  line-height: 40px;
-  color: #434955;
-  cursor: pointer;
-  overflow: hidden;
-  background-color: #fdfdfd;
-  -webkit-tap-highlight-color: transparent;
-  transition: background .2s linear; }
-  .accordion-header:hover {
-    background-color: #999;
-    color: #fff; }
-  .accordion-header:after {
-    content: "\e313";
-    font-family: 'Material Icons';
-    float: right;
-    font-size: 18px;
-    transition: all .2s linear; }
-
-.accordionActive.accordion-header {
-  background-color: #999;
-  color: #fff;
-  margin-bottom: 0; }
-  .accordionActive.accordion-header:after {
-    content: "\e316";
-    font-family: 'Material Icons'; }
-
-.accordion-panel {
-  padding: 0 .5em;
-  border: solid 1px #ccc;
-  border-bottom: 0;
-  background-color: #fff;
-  color: #434955;
-  display: none; }
-
 @media print {
   header[role="banner"], footer, nav {
     display: none; }
@@ -1173,4 +1074,4 @@ th, th:first-of-type {
   .noPrint {
     display: none; } }
 
-/*# sourceMappingURL=FresPlate.css.map */
+/*# sourceMappingURL=freshplate.css.map */
